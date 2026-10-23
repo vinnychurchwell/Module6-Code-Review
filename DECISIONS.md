@@ -1,0 +1,7 @@
+# Design Decisions
+
+I renamed the functions and variables to make their responsibilities clearer. The names `process_numbers` and `process_strings` describe the type of data each function handles, while `numbers`, `words`, `processed_numbers`, and `processed_strings` distinguish inputs from outputs. These names follow the lowercase-with-underscores style recommended by PEP 8 and reduce ambiguity for someone reading or updating the program.
+
+I added docstrings to explain the purpose, parameters, and return values of the functions. I used list comprehensions because each item can be transformed independently and returned as a new list. The numeric transformation uses `enumerate` to access each item's index without maintaining a separate counter. The string transformation uses a set of target words to make the uppercase rule explicit. A short comment explains the reason for keeping the numeric transformation in one expression. These changes reduce unnecessary code and make the intent easier to scan.
+
+I tested the refactored script by running it with Python and comparing its output with the assignment's expected output. The program produced both required lines and completed without errors. This check helps confirm that the refactoring meets the assignment's output requirement. In a real repository, I would commit the starter files first and then commit the completed refactoring and documentation separately so the project history clearly shows the changes.
