@@ -21,3 +21,4 @@ Expected output:
 Processed Numbers: [3, 4, 9, 8, 15, 12, 21]
 Processed Strings: apple BANANA kiwi GRAPEFRUIT CHERRY
 ```
+This project demonstrates Python code refactoring and documentation.
